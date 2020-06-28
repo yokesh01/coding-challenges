@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main()
+{
+    int arr[100];
+    int x,i=0,j,odd=0,even=0;
+    scanf("%d",&x);
+    while(x>0)
+    {
+        arr[i]=x%10;
+        x=x/10;
+        i++;
+    }
+    for(j=0;j<i;j+=2)
+    {
+        even=even+arr[j];
+    }
+    //printf("%d\n",even);
+    for(j=1;j<i;j+=2)
+    {
+        odd=odd+arr[j];
+    }
+    //printf("%d\n",odd);
+    if(odd>even)
+    {
+        j=odd-even;
+        printf("%d\n",j);
+    }
+
+    else
+    {
+        j=even-odd;
+        printf("%d",j);
+    }
+
+    return 0;
+}

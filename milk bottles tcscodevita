@@ -20,10 +20,12 @@ public class demo
           arr[i]=arr[i]%b[j];
           if (arr[i]==0)break;
         }
-        System.out.println(r);
+        else{
+          r++;
+        }
       
       }
-    
+    System.out.println(r);
     }
     
   }

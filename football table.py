@@ -11,29 +11,6 @@ for i in range(x):
             table.update({inpstr[0]:valTemp})
         else:
             table.update({inpstr[0]:3})
-        
-    else:
-        if(inpstr[0] in table.keys()):
-            
-            valTemp=int(table.get(inpstr[0]))+0
-            table.update({inpstr[0]:valTemp})
-        else:
-            table.update({inpstr[0]:0})
-        
-    if(int(inpstr[2])<int(inpstr[4])):
-        if(inpstr[1] in table.keys()):
-            
-            valTemp=int(table.get(inpstr[1]))+3
-            table.update({inpstr[1]:valTemp})
-        else:
-            table.update({inpstr[1]:3})
-    else:
-        if(inpstr[1] in table.keys()):
-            
-            valTemp=int(table.get(inpstr[1]))+0
-            table.update({inpstr[1]:valTemp})
-        else:
-            table.update({inpstr[0]:0})
             
     if(int(inpstr[2])==int(inpstr[4])):
         if(inpstr[0] in table.keys()):
@@ -60,3 +37,4 @@ for k in table.keys():
         team=k
 print(team)
 print(maxval)
+
